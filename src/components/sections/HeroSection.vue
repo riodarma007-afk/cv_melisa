@@ -36,48 +36,6 @@ onMounted(() => {
     </div>
 
     <div class="container-cv hero__inner">
-      <!-- Photo side -->
-      <div :class="['hero__photo-wrapper', { 'hero__photo-wrapper--visible': isVisible }]">
-        <div class="hero__photo-blob">
-          <div
-            class="hero__photo-parallax"
-            :style="{
-              transform: prefersReducedMotion
-                ? 'none'
-                : `translate(${mouseX * 0.3}px, ${mouseY * 0.3}px)`,
-            }"
-          >
-            <div class="hero__photo-frame animate-float">
-              <img
-                src="../../assets/images/melisafoto.png"
-                alt="Foto Melisa Isolina Songli"
-                class="hero__photo"
-                width="320"
-                height="320"
-                loading="eager"
-              />
-            </div>
-            
-            <!-- Floating UI Cards -->
-            <div class="hero__floating-card hero__floating-card--1 animate-float-slow">
-              <div class="card-icon">📈</div>
-              <div class="card-text">
-                <strong>90%</strong>
-                <span>Optimization</span>
-              </div>
-            </div>
-            
-            <div class="hero__floating-card hero__floating-card--2 animate-float">
-              <div class="card-icon">⭐</div>
-              <div class="card-text">
-                <strong>4+ Tahun</strong>
-                <span>Pengalaman</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Content side -->
       <div :class="['hero__content', { 'hero__content--visible': isVisible }]">
         <div class="hero__badge animate-pulse-soft">
@@ -134,6 +92,48 @@ onMounted(() => {
           </span>
         </div>
       </div>
+
+      <!-- Photo side -->
+      <div :class="['hero__photo-wrapper', { 'hero__photo-wrapper--visible': isVisible }]">
+        <div class="hero__photo-blob">
+          <div
+            class="hero__photo-parallax"
+            :style="{
+              transform: prefersReducedMotion
+                ? 'none'
+                : `translate(${mouseX * 0.3}px, ${mouseY * 0.3}px)`,
+            }"
+          >
+            <div class="hero__photo-frame animate-float">
+              <img
+                src="../../assets/images/melisafoto.png"
+                alt="Foto Melisa Isolina Songli"
+                class="hero__photo"
+                width="320"
+                height="320"
+                loading="eager"
+              />
+            </div>
+            
+            <!-- Floating UI Cards -->
+            <div class="hero__floating-card hero__floating-card--1 animate-float-slow">
+              <div class="card-icon">📈</div>
+              <div class="card-text">
+                <strong>90%</strong>
+                <span>Optimization</span>
+              </div>
+            </div>
+            
+            <div class="hero__floating-card hero__floating-card--2 animate-float">
+              <div class="card-icon">⭐</div>
+              <div class="card-text">
+                <strong>4+ Tahun</strong>
+                <span>Pengalaman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Scroll indicator -->
@@ -160,7 +160,7 @@ onMounted(() => {
 
 .hero__inner {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1.2fr 1fr;
   gap: 64px;
   align-items: center;
 }
@@ -170,7 +170,7 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(30px);
   transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
