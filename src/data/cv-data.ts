@@ -199,23 +199,23 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'doc-control',
-    title: 'Sistem Kontrol Dokumen Internal',
+    title: 'Project Improvement: Perancangan Sistem Kontrol Dokumen',
     company: 'PT. Mega Global Energy',
     year: '2024',
     description: [
-      'Merancang ulang alur persetujuan 6 jenis dokumen internal departemen Planning yang sebelumnya manual dan berlapis.',
+      'Memimpin inisiatif perbaikan (improvement) dengan merancang ulang alur persetujuan 6 jenis dokumen internal departemen Planning yang sebelumnya manual dan berlapis.',
       'Memisahkan alur menjadi dua pola sesuai bobot dokumen: persetujuan penuh 5 langkah untuk dokumen krusial, dan pencatatan otomatis 2 langkah untuk checklist rutin harian (ISO 9001).',
-      'Menyusun flowchart, wireframe, hingga prototipe HTML interaktif yang dapat diuji langsung oleh pengguna.'
+      'Menyusun flowchart, wireframe, hingga prototipe HTML interaktif yang siap dikembangkan menjadi aplikasi.'
     ]
   },
   {
     id: 'erd-design',
-    title: 'ERD Sistem Kontrol Dokumen',
+    title: 'Project Improvement: Desain Basis Data (ERD) Kontrol Dokumen',
     company: 'PT. Mega Global Energy',
     year: '2024',
     description: [
-      'Merancang Entity Relationship Diagram 5 tabel (departemen, pengguna, dokumen, revisi, persetujuan) sebagai fondasi sistem sebelum desain antarmuka.',
-      'Memastikan struktur data dapat digunakan oleh seluruh karyawan lintas departemen dengan riwayat pengajuan yang dapat dilacak.'
+      'Merancang Entity Relationship Diagram 5 tabel (departemen, pengguna, dokumen, revisi, persetujuan) sebagai fondasi dari sistem baru.',
+      'Memastikan struktur data dapat digunakan secara lintas departemen dengan riwayat pengajuan yang terintegrasi dan mudah dilacak.'
     ]
   }
 ]
