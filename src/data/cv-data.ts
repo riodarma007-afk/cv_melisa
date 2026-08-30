@@ -55,12 +55,13 @@ export interface StatItem {
   label: string
 }
 
+
 // --- Personal Info ---
 export const personalInfo: PersonalInfo = {
   name: 'Melisa Isolina Songli',
-  role: 'Administrasi Bisnis — Admin Planning & Office Operations',
-  tagline: 'Lulusan Administrasi Bisnis UPN "Veteran" Yogyakarta (2022), saat ini aktif sebagai Admin Planning di PT Mega Global Energy sejak Mei 2023.',
-  about: 'Saya adalah profesional administrasi bisnis dengan pengalaman di sektor energi dan pertambangan. Terbiasa mengelola sistem operasional, menyusun laporan, serta menangani perencanaan administrasi secara terstruktur dan teliti. Saya percaya bahwa kerapihan dalam administrasi adalah fondasi operasional yang efisien.',
+  role: 'Admin Planning & UI/UX Designer',
+  tagline: 'Profesional Administrasi Bisnis (UPN "Veteran" Yogyakarta 2022) yang bertransisi ke ranah perancangan sistem digital. Saat ini aktif sebagai Admin Planning di PT Mega Global Energy sejak Mei 2023.',
+  about: 'Saya adalah profesional administrasi bisnis dengan pengalaman di sektor energi dan pertambangan. Terbiasa menghadapi proses administrasi lapangan yang berlapis dan berbasis dokumen, lalu merancangnya ulang menjadi alur kerja dan antarmuka digital yang lebih sederhana — mulai dari pemetaan proses, perancangan struktur data (ERD), wireframe, hingga prototipe interaktif yang siap diuji pengguna.',
   phone: '0853-4542-0296',
   email: 'melsisolina@gmail.com',
   address: 'Gg. Family No 28',
@@ -91,7 +92,7 @@ export const experiences: Experience[] = [
       'Input & update data fuel voucher, Daily/Weekly Fuel Report',
       'Input timesheet unit site sampai Berita Acara (Invoice)',
       'Susun pengajuan WR, PR, Mine Permit (Simper), dan Komisioning Unit',
-      'Monitoring MCU tahunan & perencanaan cuti periodik departemen',
+      'Berperan dalam inisiatif perbaikan proses administrasi department melalui perancangan sistem dan alur kerja digital',
       'Bangun dashboard inspeksi K3 (SAP) dari Excel ke Power BI',
       'Monitoring absensi via AppSheet',
     ],
@@ -171,14 +172,52 @@ export const educations: Education[] = [
 export const skills: SkillGroup[] = [
   {
     category: 'soft',
-    label: 'Soft Skills',
-    items: ['Team Work', 'Detail Oriented', 'Good Communication Skills'],
+    label: 'Desain & Riset UX',
+    items: ['Wireframing', 'Prototyping', 'Process Mapping', 'Information Architecture', 'Prinsip Document Control ISO 9001'],
   },
   {
     category: 'tools',
     label: 'Tools & Software',
-    items: ['Microsoft Word', 'Microsoft Excel', 'Microsoft PowerPoint', 'Canva', 'Power BI'],
+    items: ['Figma', 'HTML/CSS Prototyping', 'Power BI', 'Canva', 'Microsoft Office'],
   },
+  {
+    category: 'soft',
+    label: 'Soft Skills',
+    items: ['Team Work', 'Detail Oriented', 'Good Communication Skills'],
+  }
+]
+
+// --- Proyek UI/UX ---
+export interface Project {
+  id: string
+  title: string
+  company: string
+  year: string
+  description: string[]
+}
+
+export const projects: Project[] = [
+  {
+    id: 'doc-control',
+    title: 'Sistem Kontrol Dokumen Internal',
+    company: 'PT. Mega Global Energy',
+    year: '2024',
+    description: [
+      'Merancang ulang alur persetujuan 6 jenis dokumen internal departemen Planning yang sebelumnya manual dan berlapis.',
+      'Memisahkan alur menjadi dua pola sesuai bobot dokumen: persetujuan penuh 5 langkah untuk dokumen krusial, dan pencatatan otomatis 2 langkah untuk checklist rutin harian (ISO 9001).',
+      'Menyusun flowchart, wireframe, hingga prototipe HTML interaktif yang dapat diuji langsung oleh pengguna.'
+    ]
+  },
+  {
+    id: 'erd-design',
+    title: 'ERD Sistem Kontrol Dokumen',
+    company: 'PT. Mega Global Energy',
+    year: '2024',
+    description: [
+      'Merancang Entity Relationship Diagram 5 tabel (departemen, pengguna, dokumen, revisi, persetujuan) sebagai fondasi sistem sebelum desain antarmuka.',
+      'Memastikan struktur data dapat digunakan oleh seluruh karyawan lintas departemen dengan riwayat pengajuan yang dapat dilacak.'
+    ]
+  }
 ]
 
 // --- Navigation Items ---
@@ -186,6 +225,7 @@ export const navItems = [
   { id: 'beranda', label: 'Beranda' },
   { id: 'tentang', label: 'Tentang' },
   { id: 'pengalaman', label: 'Pengalaman' },
+  { id: 'proyek', label: 'Proyek' },
   { id: 'organisasi', label: 'Organisasi' },
   { id: 'pendidikan', label: 'Pendidikan' },
   { id: 'keahlian', label: 'Keahlian' },

@@ -6,6 +6,7 @@ import FooterSection from './components/layout/FooterSection.vue'
 import HeroSection from './components/sections/HeroSection.vue'
 import AboutSection from './components/sections/AboutSection.vue'
 import ExperienceTimeline from './components/sections/ExperienceTimeline.vue'
+import ProjectsSection from './components/sections/ProjectsSection.vue'
 import OrganizationSection from './components/sections/OrganizationSection.vue'
 import EducationSection from './components/sections/EducationSection.vue'
 import SkillsSection from './components/sections/SkillsSection.vue'
@@ -46,6 +47,7 @@ onUnmounted(() => {
       <HeroSection />
       <AboutSection />
       <ExperienceTimeline />
+      <ProjectsSection />
       <OrganizationSection />
       <EducationSection />
       <SkillsSection />
