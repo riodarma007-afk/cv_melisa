@@ -28,8 +28,8 @@ onMounted(() => {
   <section id="proyek" class="projects section-paper" ref="sectionRef">
     <div class="container-cv">
       <div :class="['projects__header', { 'projects__header--visible': isVisible || prefersReducedMotion }]">
-        <span class="projects__label">Proyek</span>
-        <h2 class="projects__title">Proyek UI/UX Pilihan</h2>
+        <span class="projects__label">Project</span>
+        <h2 class="projects__title">Project UI/UX Pilihan</h2>
       </div>
 
       <div class="projects__grid">
