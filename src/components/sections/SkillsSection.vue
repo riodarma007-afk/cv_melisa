@@ -94,6 +94,13 @@ onMounted(() => {
 <style scoped>
 .skills {
   padding: var(--section-gap) 0;
+  position: relative;
+  background-image: 
+    linear-gradient(rgba(251, 252, 254, 0.85), rgba(251, 252, 254, 0.95)),
+    url('../../assets/images/melisa2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .skills__header {
