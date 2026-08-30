@@ -82,6 +82,13 @@ function getIconLabel(type: string): string {
 <style scoped>
 .org {
   padding: var(--section-gap) 0;
+  position: relative;
+  background-image: 
+    linear-gradient(rgba(251, 252, 254, 0.85), rgba(251, 252, 254, 0.95)),
+    url('../../assets/images/melisa3.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .org__header {

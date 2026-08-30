@@ -26,7 +26,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="tentang" class="about section-mist" ref="sectionRef">
+  <section id="tentang" class="about" ref="sectionRef">
     <div class="container-cv about__inner">
       <div :class="['about__content', { 'about__content--visible': isVisible || prefersReducedMotion }]">
         <span class="about__label">Tentang Saya</span>
@@ -49,6 +49,13 @@ onMounted(() => {
 <style scoped>
 .about {
   padding: var(--section-gap) 0;
+  position: relative;
+  background-image: 
+    linear-gradient(to right, rgba(251, 252, 254, 0.95) 40%, rgba(251, 252, 254, 0.7) 100%),
+    url('../../assets/images/melisa2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .about__inner {
